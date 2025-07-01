@@ -123,7 +123,8 @@ class Logger {
         if let context = context {
             message += " \(context)"
         }
-
+        print("\(message)")
+        
         self.delegate?.debugLog?(message: message)
     }
 }
